@@ -15,4 +15,4 @@ A python bootcamp for essentials to explore, make sense and visualize data using
 </ul>
 [AngularJS Routing Using UI-Router](http://scotch.io/tutorials/javascript/angular-routing-using-ui-router)
 
-Released Under Creative Commons License.
+Released Under MIT License.
