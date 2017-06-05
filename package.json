@@ -1,0 +1,20 @@
+{
+  "name": "python-for-datascience",
+  "version": "1.0.0",
+  "description": "Topics ranging from basics of python and basic modules",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prahaladbelavadi/python-for-datascience.git"
+  },
+  "author": "Prahalad Belavadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prahaladbelavadi/python-for-datascience/issues"
+  },
+  "homepage": "https://github.com/prahaladbelavadi/python-for-datascience#readme"
+}
