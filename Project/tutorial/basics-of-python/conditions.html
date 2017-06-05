@@ -1,0 +1,109 @@
+<div class="jumbotron">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+            <b>Decision Making</b>
+        </h3>
+      </div>
+      <div class="panel-body">
+          <blockquote>
+             A Decision is when a program has more than one choice of actions depending on a variable's value.
+          </blockquote>
+          <blockquote class="blockquote-reverse">
+                <a ui-sref='conditions-ipython' class="btn btn-primary">
+                <strong>IPython | Jupyter</strong>
+            </a>
+          </blockquote>
+
+          <div class="well well-sm text-center">
+              <p>
+                Anticipating Conditions during execution and specifying actions to be taken upon action forms an integral portion of decision making
+              </p>
+              <blockquote>
+                  Typical Structure
+              </blockquote>
+              <img src="https://www.tutorialspoint.com/python/images/decision_making.jpg" class="img-rounded img-thumbnail">
+          </div>
+          <div class="well well-sm">
+            <b>
+                Example:
+                <em>A traffic light.</em>
+            </b>
+            <p>
+                 When it is green, we continue our drive. When we see the light turn yellow, we reduce our speed, and when it is red, we stop. These are logical decisions that depend on the value of the traffic light.
+            </p>
+          </div>
+
+      </div>
+      <div class="well well-sm">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+                Excercise: Absolute statements
+            </h3>
+          </div>
+          <div class="panel-body">
+              Input:
+              <pre>
+                  n = raw_input("Integer? ")#Pick an integer.  And remember, if raw_input is not supported by your OS, use input()
+                  n = int(n)#Defines n as the integer you chose. (Alternatively, you can define n yourself)
+                  if n < 0:
+                      print ("The absolute value of",n,"is",-n)
+                  else:
+                      print ("The absolute value of",n,"is",n)
+              </pre>
+              Output:
+              <pre>
+                                    Integer? -34
+                                    The absolute value of -34 is 34
+
+                                    Integer? 1
+                                    The absolute value of 1 is 1
+              </pre>
+          </div>
+          <div class="well well-sm">
+            <p>
+                What does the computer do when it sees this piece of code? First it prompts the user for a number with the statement "n = raw_input("Integer? ")".
+            </p>
+            <p>
+                Next it reads the line "if n < 0:". If n is less than zero Python runs the line "print "The absolute value of",n,"is",-n". Otherwise python runs the line "print "The absolute value of",n,"is",n".
+
+            </p>
+            <p>
+                More formally, Python looks at whether the expression n < 0 is true or false. An if statement is followed by an indented block of statements that are run when the expression is true.
+            </p>
+            <p>
+                After the if statement is an optional else statement and another indented block of statements. This 2nd block of statements is run if the expression is false.
+            </p>
+          </div>
+          <div class="panel-footer">
+              <blockquote>
+                  <strong>Assignment:</strong>
+              </blockquote>
+              <ol>
+                  <li>
+
+                    Write a password guessing program to keep track of how many times the user has entered the password wrong. If it is more than 3 times, print You have been denied access. and terminate the program. If the password is correct, print You have successfully logged in. and terminate the program.
+
+                  </li>
+                  <li>
+                    Write a program that asks for two numbers. If the sum of the numbers is greater than 100, print That is a big number and terminate the program.
+                  </li>
+                  <li>
+                    Write a program that asks the user their name. If they enter your name, say "That is a nice name." If they enter "John Cleese" or "Michael Palin", tell them how you feel about them ;), otherwise tell them "You have a nice name."
+                  </li>
+                  <li>
+
+                    Ask the user to enter the password. If the password is correct print "You have successfully logged in" and exit the program. If the password is wrong print "Sorry the password is wrong" and ask the user to enter the password 3 times. If the password is wrong print "You have been denied access" and exit the program.
+                  </li>
+              </ol>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+          <em>Source:</em>
+              <a href="https://en.wikibooks.org/wiki/Python_Programming/  ">Wiki</a>
+              <a href="https://www.tutorialspoint.com/python/">TutorialsPoint</a>
+      </div>
+    </div>
+</div>

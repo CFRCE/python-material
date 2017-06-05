@@ -1,0 +1,135 @@
+<div class="jumbotron">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+            <strong>String Operators</strong>
+        </h3>
+      </div>
+      <div class="panel-body">
+          <blockquote>
+              String Operators
+          </blockquote>
+          <blockquote class="blockquote-reverse">
+              <a ui-sref='strop-ipython' class="btn btn-primary">
+              <strong>IPython | Jupyter</strong>
+          </a>
+          </blockquote>
+
+          <div class="well well-sm">
+              <pre>
+
+                  str1 = "Hello"                # A new string using double quotes
+                  str2 = 'Hello'                # Single quotes do the same
+                  str3 = "Hello\tworld\n"       # One with a tab and a newline
+                  str4 = str1 + " world"        # Concatenation
+                  str5 = str1 + str(4)          # Concatenation with a number
+                  str6 = str1[2]                # 3rd character
+                  str6a = str1[-1]              # Last character
+                  #str1[0] = "M"                # No way; strings are immutable
+                  for char in str1: print char  # For each character
+                  str7 = str1[1:]               # Without the 1st character
+                  str8 = str1[:-1]              # Without the last character
+                  str9 = str1[1:4]              # Substring: 2nd to 4th character
+                  str10 = str1 * 3              # Repetition
+                  str11 = str1.lower()          # Lowercase
+                  str12 = str1.upper()          # Uppercase
+                  str13 = str1.rstrip()         # Strip right (trailing) whitespace
+                  str14 = str1.replace('l','h') # Replacement
+                  list15 = str1.split('l')      # Splitting
+                  if str1 == str2: print "Equ"  # Equality test
+                  if "el" in str1: print "In"   # Substring test
+                  length = len(str1)            # Length
+                  pos1 = str1.find('llo')       # Index of substring or -1
+                  pos2 = str1.rfind('l')        # Index of substring, from the right
+                  count = str1.count('l')       # Number of occurrences of a substring
+
+                  print str1, str2, str3, str4, str5, str6, str7, str8, str9, str10
+                  print str11, str12, str13, str14, list15
+                  print length, pos1, pos2, count
+
+              </pre>
+          </div>
+
+          <h3><strong>String Operations</strong></h3>
+          <div class="well well-sm">
+            <ul>
+                <li>
+                    <b>Equality</b>
+                    <p>
+                        Two strings are equal if they have exactly the same contents, meaning that they are both the same length and each character has a one-to-one positional correspondence. Many other languages compare strings by identity instead; that is, two strings are considered equal only if they occupy the same space in memory. Python uses the is operator to test the identity of strings and any two objects in general.
+                    </p>
+                    <pre>
+
+                        >>> a = 'hello'; b = 'hello' # Assign 'hello' to a and b.
+                        >>> a == b                   # check for equality
+                        True
+                        >>> a == 'hello'             #
+                        True
+                        >>> a == "hello"             # (choice of delimiter is unimportant)
+                        True
+                        >>> a == 'hello '            # (extra space)
+                        False
+                        >>> a == 'Hello'             # (wrong case)
+                        False
+
+                    </pre>
+                </li>
+                <li>
+                    <b>Numerical</b>
+                    <p>
+                        There are two quasi-numerical operations which can be done on strings -- addition and multiplication. String addition is just another name for concatenation. String multiplication is repetitive addition, or concatenation. So:
+                    </p>
+                    <pre>
+
+                        >>> c = 'a'
+                        >>> c + 'b'
+                        'ab'
+                        >>> c * 5
+                        'aaaaa'
+
+                    </pre>
+                </li>
+                <li>
+                    <b>Containment</b>
+                    <p>
+                        There is a simple operator 'in' that returns True if the first operand is contained in the second. This also works on substrings
+                    </p>
+                    <pre>
+                        >>> x = 'hello'
+                        >>> y = 'ell'
+                        >>> x in y
+                        False
+                        >>> y in x
+                        True
+                    </pre>
+                    <p>
+                        Note that 'print x in y' would have also returned the same value.
+                    </p>
+                </li>
+                <li>
+                    <b>Indexing and Slicing</b>
+                    <p>
+                        Much like arrays in other languages, the individual characters in a string can be accessed by an integer representing its position in the string. The first character in string s would be s[0] and the nth character would be at s[n-1].
+                    </p>
+                    <pre>
+                        >>> s = "Xanadu"
+                        >>> s[1]
+                        'a'
+                    </pre>
+                </li>
+            </ul>
+          </div>
+          <blockquote>
+              <a href="https://en.wikibooks.org/wiki/Python_Programming/Strings">
+                  Further Operations with Strings
+              </a>
+          </blockquote>
+      </div>
+      <div class="panel-footer">
+          <em>Source:</em>
+              <a href="https://en.wikibooks.org/wiki/Python_Programming">
+                  Wiki
+              </a>
+      </div>
+    </div>
+</div>
