@@ -34,44 +34,62 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     //basics of python
         //hello-world
         .state('hello-world', {
-            url:'/hello-world',
+            url:'/tutorial/hello-world',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/hello-world.html'
         })
         //Data-types-and-variables
         .state('data-type-variables',{
-            url:'/data-type-variables',
+            url:'/tutorial/data-type-variables',
             templateUrl:'/Project/tutorial/basics-of-python/data-type-variables.html'
         })
         .state('data-type-variables-ipython',{
-            url:'/data-type-variables-ipython',
+            url:'/tutorial/data-type-variables-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/dtv-py.html'
         })
         //numbers
         .state('numbers',{
-            url:'/numbers',
+            url:'/tutorial/numbers',
             templateUrl:'/Project/tutorial/basics-of-python/numbers.html'
         })
         .state('numbers-ipython',{
-            url:'/numbers-ipython',
+            url:'/tutorial/numbers-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/numbers-ipython.html'
         })
         //lists
         .state('lists',{
-            url:'/lists',
+            url:'/tutorial/lists',
             templateUrl:'/Project/tutorial/basics-of-python/lists.html'
         })
         .state('lists-ipython',{
-            url:'/lists-ipython',
+            url:'/tutorial/lists-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/lists-ipython.html'
         })
         //Basic Operators
         .state('basicop',{
-            url:'/basicop',
+            url:'/tutorial/basicop',
             templateUrl:'/Project/tutorial/basics-of-python/basicop.html'
         })
         .state('basicop-ipython',{
-            url:'/basicop-ipython',
+            url:'/tutorial/basicop-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/basicop-ipython.html'
+        })
+        //string Operations
+        .state('strop',{
+            url:'/tutorial/string-operations',
+            templateUrl:'/Project/tutorial/basics-of-python/strop.html'
+        })
+        .state('strop-ipython',{
+            url:'/tutorial/string-operations-ipython',
+            templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/strop-ipython.html'
+        })
+        //Conditions
+        .state('conditions',{
+            url:'/tutorial/conditions',
+            templateUrl:'/Project/tutorial/basics-of-python/conditions.html'
+        })
+        .state('conditions-ipython',{
+            url:'/tutorial/conditions-ipython',
+            templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/conditions-ipython.html'
         })
         //end
 
