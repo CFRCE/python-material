@@ -55,6 +55,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:'/numbers-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/numbers-ipython.html'
         })
+        //lists
         .state('lists',{
             url:'/lists',
             templateUrl:'/Project/tutorial/basics-of-python/lists.html'
@@ -62,6 +63,15 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('lists-ipython',{
             url:'/lists-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/lists-ipython.html'
+        })
+        //Basic Operators
+        .state('basicop',{
+            url:'/basicop',
+            templateUrl:'/Project/tutorial/basics-of-python/basicop.html'
+        })
+        .state('basicop-ipython',{
+            url:'/basicop-ipython',
+            templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/basicop-ipython.html'
         })
         //end
 

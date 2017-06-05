@@ -1,0 +1,180 @@
+<div class="jumbotron">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+        <strong>Basic Operators</strong>
+    </h3>
+  </div>
+  <div class="panel-body">
+      <blockquote>
+          Basic Python Programming Operators
+      </blockquote>
+  </div>
+  <blockquote class="blockquote-reverse">
+      <a ui-sref='basicop-ipython' class="btn btn-primary">
+      <strong>IPython | Jupyter</strong>
+  </a>
+  </blockquote>
+  <div class="well well-sm">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Basics</h3>
+    </div>
+    <div class="panel-body">
+        <p>Python math works like you would expect.</p>
+        <pre>
+            >>> x = 2
+            >>> y = 3
+            >>> z = 5
+            >>> x * y
+            6
+            >>> x + y
+            5
+            >>> x * y + z
+            11
+            >>> (x + y) * z
+            25
+        </pre>
+    </div>
+    <div class="panel-footer">
+            Python adheres to
+            <a href="https://en.wikipedia.org/wiki/Order_of_operations">
+                PEMDAS or BODMAS
+            </a>
+    </div>
+  </div>
+  </div>
+
+  <ul>
+      <li>
+          <b>Powers</b>
+          <p>
+              There is a built in exponentiation operator **, which can take either integers, floating point or complex numbers. This occupies its proper place in the order of operations.
+          </p>
+          <pre>
+              >>> 2**8
+              256
+          </pre>
+      </li>
+
+      <li>
+          <b>Division and Type Conversion</b>
+          <p>
+              For Python 2.x, dividing two integers or longs uses integer division, also known as "floor division" (applying the floor function after division. So, for example, 5 / 2 is 2. Using "/" to do division this way is deprecated; if you want floor division, use "//" (available in Python 2.2 and later).
+          </p>
+          <p>
+              "/" does "true division" for floats and complex numbers; for example, 5.0/2.0 is 2.5.
+          </p>
+          <p>
+              For Python 3.x, "/" does "true division" for all types.
+          </p>
+          <p>
+              Dividing by or into a floating point number (there are no fractional types in Python) will cause Python to use true division. To coerce an integer to become a float, 'float()' with the integer as a parameter.
+          </p>
+          <div class="well well-sm">
+            <pre>
+                >>> x = 5
+                >>> float(x)
+                5.0
+            </pre>
+          </div>
+      </li>
+      <li>
+          <b>Modulo:</b>
+          <p>
+              The modulus (remainder of the division of the two operands, rather than the quotient) can be found using the % operator, or by the divmod builtin function. The divmod function returns a tuple containing the quotient and remainder.
+          </p>
+          <div class="well well-sm">
+            <pre>
+                >>> 10%7
+                3
+                >>> -10%7
+                4
+            </pre>
+          </div>
+      </li>
+      <li>
+         <b>Comparison</b>
+         <div class="well well-sm">
+             <table class="table">
+                <tr>
+                <th>Operation</th>
+                <th>Means</th>
+                </tr>
+                <tr>
+                <td>&lt;</td>
+                <td>Less than</td>
+                </tr>
+                <tr>
+                <td>&gt;</td>
+                <td>Greater than</td>
+                </tr>
+                <tr>
+                <td>&lt;=</td>
+                <td>Less than or equal to</td>
+                </tr>
+                <tr>
+                <td>&gt;=</td>
+                <td>Greater than or equal to</td>
+                </tr>
+                <tr>
+                <td>==</td>
+                <td>Equal to</td>
+                </tr>
+                <tr>
+                <td>&#160;!=</td>
+                <td>Not equal to</td>
+                </tr>
+            </table>
+         </div>
+         <p>
+             Numbers, strings and other types can be compared for equality/inequality and ordering:
+         </p>
+         <pre>
+            >>> 2 == 3
+            False
+            >>> 3 == 3
+            True
+            >>> 2 < 3
+            True
+            >>> "a" < "aa"
+            True
+         </pre>
+      </li>
+
+      <li>
+          <b>Identity</b>
+          <p>
+              The operators is and is not test for object identity and stand in contrast to == (equals): x is y is true if and only if x and y are references to the same object in memory. x is not y yields the inverse truth value. Note that an identity test is more stringent than an equality test since two distinct objects may have the same value.
+          </p>
+          <pre>
+            >>> [1,2,3] == [1,2,3]
+            True
+            >>> [1,2,3] is [1,2,3]
+            False
+          </pre>
+          <hr>
+          <pre>
+            print 8 is 8            # True
+            print "str" is "str"    # True
+            print (1, 2) is (1, 2)  # False
+            print [1, 2] is [1, 2]  # False
+            print id(8) == id(8)    # True
+            int1 = 8
+            print int1 is 8         # True
+            oldid = id(int1)
+            int1 += 2
+            print id(int1) == oldid # False
+          </pre>
+      </li>
+  </ul>
+
+
+  <div class="panel-footer">
+      <em>Source:</em>
+          <a href="https://en.wikibooks.org/wiki/Python_Programming/  ">Wiki</a>
+
+  </div>
+</div>
+
+</div>
