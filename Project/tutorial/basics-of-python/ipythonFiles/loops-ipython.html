@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>conditions-ipython</title>
+<title>loops-ipython</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11748,16 +11748,14 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#example</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s2">&quot;Integer? &quot;</span><span class="p">)</span><span class="c1">#Pick an integer.  And remember, if raw_input is not supported by your OS, use input()</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="c1">#Defines n as the integer you chose. (Alternatively, you can define n yourself)</span>
-<span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;The absolute value of&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="o">-</span><span class="n">n</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;The absolute value of&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#while loop</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Same as a = a + 1 </span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11770,8 +11768,11 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Integer? -45
-(&#39;The absolute value of&#39;, -45, &#39;is&#39;, 45)
+<pre>1
+2
+3
+4
+5
 </pre>
 </div>
 </div>
@@ -11782,19 +11783,20 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#example of an elif situation</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s2">&quot;&lt;=&quot;</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Neither test was true&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#adding numbers to the sum</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Enter Numbers to add to the sum.&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Enter 0 to quit.&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Current Sum: &#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Number? &#39;</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">+=</span> <span class="n">a</span>
+<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Total Sum = &#39;</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11807,16 +11809,62 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, &#39;&lt;=&#39;, 7)
-(2, &#39;&lt;=&#39;, 7)
-(3, &#39;&lt;=&#39;, 7)
-(4, &#39;&lt;=&#39;, 7)
-(5, &#39;&lt;=&#39;, 7)
-(6, &#39;&gt;&#39;, 5)
-(7, &#39;&gt;&#39;, 5)
-(8, &#39;&gt;&#39;, 5)
-(9, &#39;&gt;&#39;, 5)
-(10, &#39;&gt;&#39;, 5)
+<pre>Enter Numbers to add to the sum.
+Enter 0 to quit.
+(&#39;Current Sum: &#39;, 0)
+Number? 1
+(&#39;Current Sum: &#39;, 1.0)
+Number? 2
+(&#39;Current Sum: &#39;, 3.0)
+Number? 3
+(&#39;Current Sum: &#39;, 6.0)
+Number? 4
+(&#39;Current Sum: &#39;, 10.0)
+Number? 56
+(&#39;Current Sum: &#39;, 66.0)
+Number? 6
+(&#39;Current Sum: &#39;, 72.0)
+Number? 0
+(&#39;Total Sum = &#39;, 72.0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Waits until a password has been entered.  Use control-C to break out without</span>
+<span class="c1"># the password.</span>
+
+<span class="c1"># Note that this must not be the password so that the </span>
+<span class="c1"># while loop runs at least once.</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;foobar&quot;</span>
+
+<span class="c1">#note that != means not equal</span>
+<span class="k">while</span> <span class="n">password</span> <span class="o">!=</span> <span class="s2">&quot;unicorn&quot;</span><span class="p">:</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s2">&quot;Password: &quot;</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Welcome in&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Password: foobar
+Password: unicorn
+Welcome in
 </pre>
 </div>
 </div>
@@ -11830,25 +11878,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#if example</span>
-<span class="c1"># Plays the guessing game higher or lower </span>
-<span class="c1"># This is for demonstration purposes only. </span>
-<span class="c1"># It is not written to handle invalid input like a full program would.</span>
- 
-<span class="n">answer</span> <span class="o">=</span> <span class="mi">23</span>
-<span class="n">question</span> <span class="o">=</span> <span class="s1">&#39;What number am I thinking of?  &#39;</span>
-<span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Let</span><span class="se">\&#39;</span><span class="s1">s play the guessing game!&#39;</span><span class="p">)</span>
-
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">question</span><span class="p">))</span>
-
-    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">answer</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Little higher&#39;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">answer</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s1">&#39;Little lower&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span> <span class="c1"># guess == answer</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s1">&#39;MINDREADER!!!&#39;</span><span class="p">)</span>
-        <span class="k">break</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#for loop</span>
+<span class="c1">#print the loop in the count</span>
+<span class="n">onetoten</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">onetoten</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11861,17 +11895,16 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Let&#39;s play the guessing game!
-What number am I thinking of?  5
-Little higher
-What number am I thinking of?  25
-Little lower
-What number am I thinking of?  22
-Little higher
-What number am I thinking of?  26
-Little lower
-What number am I thinking of?  23
-MINDREADER!!!
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 </pre>
 </div>
 </div>
@@ -11882,32 +11915,12 @@ MINDREADER!!!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#odd or even example</span>
-<span class="c1">#Asks for a number.</span>
-<span class="c1">#Prints if it is even or odd</span>
-
-<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Input [x] for exit.&quot;</span><span class="p">)</span>
-
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-	<span class="n">inp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Tell me a number: &quot;</span><span class="p">)</span>
-	<span class="k">if</span> <span class="n">inp</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
-		<span class="k">break</span>
-	<span class="c1"># catch any resulting ValueError during the conversion to float</span>
-	<span class="k">try</span><span class="p">:</span>
-		<span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
-	<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-		<span class="k">print</span><span class="p">(</span><span class="s1">&#39;I said: Tell me a NUMBER!&#39;</span><span class="p">)</span>
-	<span class="k">else</span><span class="p">:</span>
-		<span class="n">test</span> <span class="o">=</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span>
-		<span class="k">if</span> <span class="n">test</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-			<span class="k">print</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">),</span><span class="s2">&quot;is even.&quot;</span><span class="p">)</span>
-		<span class="k">elif</span> <span class="n">test</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-			<span class="k">print</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">),</span><span class="s2">&quot;is odd.&quot;</span><span class="p">)</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">print</span> <span class="p">(</span><span class="n">number</span><span class="p">,</span><span class="s2">&quot;is very strange.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#use of range in a for loop</span>
+<span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11920,15 +11933,16 @@ MINDREADER!!!
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Input [x] for exit.
-Tell me a number: 5
-(5, &#39;is odd.&#39;)
-Tell me a number: 6
-(6, &#39;is even.&#39;)
-Tell me a number: 4
-(4, &#39;is even.&#39;)
-Tell me a number: 9
-(9, &#39;is odd.&#39;)
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 </pre>
 </div>
 </div>
@@ -11939,33 +11953,38 @@ Tell me a number: 9
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">## answer to the assignment</span>
-
-<span class="c1">#   Password guessing program using if statement and while statement only</span>
-
-<span class="n">guess_count</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">correct_pass</span> <span class="o">=</span> <span class="s1">&#39;dee234&#39;</span>
-
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="n">pass_guess</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your password: &quot;</span><span class="p">))</span>
-
-    <span class="n">guess_count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-    <span class="k">if</span> <span class="n">pass_guess</span> <span class="o">==</span> <span class="n">correct_pass</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s1">&#39;You have succesfully logged in.&#39;</span><span class="p">)</span>
-        <span class="k">break</span>
-
-    <span class="k">elif</span> <span class="n">pass_guess</span> <span class="o">!=</span> <span class="n">correct_pass</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">guess_count</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;You have been denied access.&quot;</span><span class="p">)</span>
-            <span class="k">break</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#example of for loop</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
