@@ -100,6 +100,15 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:'/tutorial/loops-ipython',
             templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/loops-ipython.html'
         })
+        //functions
+        .state('functions',{
+            url:'/tutorial/functions',
+            templateUrl:'/Project/tutorial/basics-of-python/functions.html'
+        })
+        .state('functions-ipython',{
+            url:'tutorial/functions',
+            templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/loops-ipython.html'
+        })
         //end
 
     //end of basics-of-python
