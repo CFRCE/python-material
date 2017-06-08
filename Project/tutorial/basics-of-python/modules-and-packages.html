@@ -1,0 +1,109 @@
+<div class="jumbotron">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+            <strong>
+                Modules and Packages
+            </strong>
+        </h3>
+      </div>
+      <div class="panel-body">
+          <blockquote>
+              Modules: structured reusable libraries of programs.
+          </blockquote>
+          <blockquote class="blockquote-reverse">
+                <a ui-sref='modules-and-packages-ipython' class="btn btn-primary">
+                <strong>IPython | Jupyter</strong>
+            </a>
+          </blockquote>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                  <b>Why Modules ?</b>
+              </h3>
+            </div>
+            <div class="panel-body">
+                <div class="well well-sm">
+                    <p>
+                    Instead of runnning processes in sessions, we are better off if we use a text editor to write code and then feed the file as input. This input file is known as a script.
+                    </p>
+                    <p>
+                        As your program gets longer, you may want to split it into several files for easier maintenance. You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.
+                    </p>
+                    <p>
+                          To support this, Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. Such a file is called a module .
+                    </p>
+                </div>
+                <div class="well well-sm">
+                  <p>
+                          Modules are a way to structure a program and create reusable libraries
+                  </p>
+                  <p>
+                      A module is usually stored in and corresponds to a separate .py file. Many modules are available from the standard library. You can create your own modules if needed.
+                  </p>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="well well-sm">
+                    <p>
+                        Modules are a way to maintain neat, structured, concise and well documented code for long run usage.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="well well-sm">
+              <div class="well well-sm">
+                  <h3>
+                      Importing Fibonacci Module:
+                  </h3>
+                  <pre>
+                      >>>  import fibo
+                  </pre>
+                  <pre>
+                      >>> fibo.fib(1000)
+                      1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+                      >>> fibo.fib2(100)
+                      [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+                      >>> fibo.__name__
+                      'fibo'
+                  </pre>
+              </div>
+              <div class="well well-sm">
+                <h3>
+                    Importing Math Module:
+                </h3>
+                <pre>
+                    import math
+                    print math.sqrt(10)
+                </pre>
+                <h3>
+                    Importing Math as <em>anything_else</em>
+                </h3>
+                <pre>
+                    import math as anything_else
+                    print anything_else.sqrt(10)
+                </pre>
+              </div>
+              <h3>
+                  Importing specific Functions under different name:
+              </h3>
+              <pre>
+                  from math import cos as cosine
+                  print cosine(10)
+              </pre>
+          </div>
+      </div>
+      <div class="panel-footer">
+          <em>Source:</em>
+              <a href="https://en.wikibooks.org/wiki/Python_Programming/">
+                  Wiki
+              </a>
+              <a href="https://www.tutorialspoint.com/python/">
+                  TutorialsPoint
+              </a>
+              <a href="https://en.wikibooks.org/wiki/Python_Programming/Modules">
+                  Creating your own Module
+              </a>
+      </div>
+    </div>
+</div>
