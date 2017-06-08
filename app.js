@@ -106,8 +106,13 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl:'/Project/tutorial/basics-of-python/functions.html'
         })
         .state('functions-ipython',{
-            url:'tutorial/functions',
-            templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/loops-ipython.html'
+            url:'/tutorial/functions-ipython',
+            templateUrl:'/Project/tutorial/basics-of-python/ipythonFiles/functions-ipython.html'
+        })
+        //modules and packages
+        .state('modules-and-packages',{
+            url:'/tutorial/modules-and-packages',
+            templateUrl:'/Project/tutorial/basics-of-python/modules-and-packages.html'
         })
         //end
 

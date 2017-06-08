@@ -11,7 +11,7 @@
               Functions: A block of organized, reusable code that is used to perform a single, relatable action:
           </blockquote>
           <blockquote class="blockquote-reverse">
-                <a ui-sref='data-type-variables-ipython' class="btn btn-primary">
+                <a ui-sref='functions-ipython' class="btn btn-primary">
                 <strong>IPython | Jupyter</strong>
             </a>
           </blockquote>
@@ -49,13 +49,48 @@
                               Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.
                           </p>
                       </li>
+                      <li>
+                            <p>
+                            The code block within every function starts with a colon (:) and is indented.
+                            </p>
+                      </li>
+                      <li>
+                          <p>
+                            The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.
+                          </p>
+                      </li>
                   </ol>
               </div>
           </div>
-
+          <div class="well well-sm">
+            <div class="text-center">
+                <b><em>Syntax</em></b>
+            </div>
+            <pre>
+                def functionname(arg1, arg2, ...):
+                    statement1
+                    statement2
+            </pre>
+          </div>
+          <div class="well well-sm">
+            <b><em>Declaring Arguements</em></b>
+            <pre>
+                >>> def find_max(a,b):
+                   if(a>b):
+                      print "a is greater than b"
+                   else:
+                      print "b is greater than a"
+                >>> find_max(30,45)  #Here (30,45) are the arguments passing for finding max between this two numbers
+                The ouput will be: 45 is greater than 30
+            </pre>
+          </div>
       </div>
       <div class="panel-footer">
-
+          <em>Source:</em>
+              <a href="https://en.wikibooks.org/wiki/Python_Programming/  ">
+                  Wiki
+              </a>
+              <a href="https://www.tutorialspoint.com/python/">TutorialsPoint</a>
       </div>
     </div>
 
