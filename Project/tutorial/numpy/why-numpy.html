@@ -1,0 +1,156 @@
+<div class="jumbotron">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+            <b><em>Numpy Module</em></b>
+        </h3>
+      </div>
+      <div class="panel-body">
+          <blockquote>
+              Different Data Types in python:
+          </blockquote>
+          <blockquote class="blockquote-reverse">
+                <a ui-sref='why-numpy-ipython' class="btn btn-primary">
+                <strong>IPython | Jupyter</strong>
+            </a>
+          </blockquote>
+          <div class="well well-sm">
+              <blockquote>
+                  Why Numpy ?
+              </blockquote>
+              <div class="well well-sm">
+                  <p>
+                      Numpy is the core library for scientific computing in Python which provides a high-performance    multidimensional array object, and tools for working with these arrays
+                  </p>
+              </div>
+            <div class="well well-sm">
+                <p>
+                    NumPy and SciPy are open-source add-on modules to Python that provide common
+                    mathematical and numerical routines in pre-compiled, fast functions.
+                </p>
+            </div>
+      </div>
+      <div class="well well-sm">
+        <blockquote>
+            Basics
+        </blockquote>
+        <p>
+        NumPy’s main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type, indexed by a tuple of positive integers. In NumPy dimensions are called axes. The number of axes is rank.
+        </p>
+      </div>
+          <div class="well well-sm">
+              <blockquote >
+                  Sample Array
+              </blockquote>
+              <pre>
+                  [[ 1., 0., 0.],
+                  [ 0., 1., 2.]]
+              </pre>
+              <div class="well well-sm">
+                  <p>
+                      The array has rank 2 (it is 2-dimensional). The first dimension (axis) has a length of 2, the second dimension has a length of 3.
+                  </p>
+              </div>
+              <div class="well well-sm">
+                  <blockquote>
+                      Importing Numpy Module
+                  </blockquote>
+                  <p>
+                      Importing Modules can be done in numerous ways.
+                      We shall be importing modules in this format henceforth to reduce confusion.
+                  </p>
+                  <pre>
+                      import numpy as np
+                  </pre>
+              </div>
+
+              <div class="well well-sm">
+                  <blockquote>
+                      Array:
+                  </blockquote>
+                <p>
+                    A numpy array is a grid of value.NumPy’s array class is called ndarray, also known as alias array.
+                </p>
+            <p>
+                The more important attributes of an ndarray object are:
+            </p>
+
+                <ul>
+                    <li>
+                        <b>ndarray.ndim</b>
+                        <p>
+                            The number of axes (dimensions) of the array. In the Python world, the number of dimensions is referred to as rank.
+                        </p>
+                    </li>
+                    <li>
+                        <b>ndarray.shape</b>
+                        <p>
+                            The dimensions of the array. This is a tuple of integers indicating the size of the array in each dimension. For a matrix with n rows and m columns, shape will be (n,m). The length of the shape tuple is therefore the rank, or number of dimensions, ndim.
+                        </p>
+                    </li>
+                    <li>
+                        <b>ndarray.size</b>
+                        <p>
+                            The total number of elements of the array. This is equal to the product of the elements of shape.
+                        </p>
+                    </li>
+                    <li>
+                        <b>ndarray.dtype</b>
+                        <p>
+                            An object describing the type of the elements in the array. One can create or specify dtype’s using standard Python types. Additionally NumPy provides types of its own. numpy.int32, numpy.int16, and numpy.float64 are some examples.
+                        </p>
+                    </li>
+                    <li>
+                        <b>ndarray.itemsize</b>
+                        <p>
+                            The size in bytes of each element of the array. For example, an array of elements of type float64 has itemsize 8 (=64/8), while one of type complex32 has itemsize 4 (=32/8). It is equivalent to ndarray.dtype.itemsize.
+                        </p>
+                    </li>
+                    <li>
+                        <b>ndarray.data</b>
+                        <p>
+                            The buffer containing the actual elements of the array. Normally, we won’t need to use this attribute because we will access the elements in an array using indexing facilities.
+                        </p>
+                    </li>
+                </ul>
+                <pre>
+                    >>> import numpy as np
+                    >>> a = np.arange(15).reshape(3, 5)
+                    >>> a
+                    array([[ 0,  1,  2,  3,  4],
+                           [ 5,  6,  7,  8,  9],
+                           [10, 11, 12, 13, 14]])
+                    >>> a.shape
+                    (3, 5)
+                    >>> a.ndim
+                    2
+                    >>> a.dtype.name
+                    'int64'
+                    >>> a.itemsize
+                    8
+                    >>> a.size
+                    15
+                    >>> type(a)
+                    <type 'numpy.ndarray'>
+                    >>> b = np.array([6, 7, 8])
+                    >>> b
+                    array([6, 7, 8])
+                    >>> type(b)
+                    <type 'numpy.ndarray'>
+                </pre>
+              </div>
+
+          </div>
+
+
+
+      </div>
+      <div class="panel-footer">
+          Reference:
+          <a href="https://engineering.ucsb.edu/~shell/che210d/numpy.pdf">
+              UCSB
+          </a>
+          <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">Documentation</a>
+      </div>
+    </div>
+</div>
