@@ -118,8 +118,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:"/tutorial/modules-and-packages-ipython",
             templateUrl:"/Project/tutorial/basics-of-python/ipythonFiles/modules-and-packages-ipython.html"
         })
-//modules
-    //numpy
+    //modules
+        //numpy
         //Why Numpy
         .state("why-numpy",{
             url:"/tutorial/why-numpy",
