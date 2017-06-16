@@ -3,5 +3,5 @@ var express = require('express')
    bodyParser = require('body-parser'),
  app.use(bodyParser());
  app.use('/',express.static(__dirname));
- app.listen(8000);
- console.log('Server listening on port 8000');
+ app.listen(8080);
+ console.log('Server listening on port 8080');

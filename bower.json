@@ -1,0 +1,27 @@
+{
+  "name": "python-for-datascience",
+  "description": "Topics ranging from basics of python and basic modules",
+  "main": "app.js",
+  "authors": [
+    "Prahalad Belavadi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "python",
+    "datascience"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^1.0.4",
+    "angular": "angularjs#^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}
