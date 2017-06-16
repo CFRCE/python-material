@@ -126,7 +126,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl:'/Project/tutorial/numpy/why-numpy.html'
         })
         .state('why-numpy-ipython',{
-            url:"tutorial/why-numpy-ipython",
+            url:"/tutorial/why-numpy-ipython",
             templateUrl:'/Project/tutorial/numpy/ipythonFiles/why-numpy-ipython.html'
         })
         //end
