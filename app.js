@@ -129,6 +129,29 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:"/tutorial/why-numpy-ipython",
             templateUrl:'/Project/tutorial/numpy/ipythonFiles/why-numpy-ipython.html'
         })
+        //basic operations
+        .state('basic-operations',{
+            url:"/tutorial/basic-operations",
+            templateUrl:'/Project/tutorial/numpy/basic-operations.html'
+        })
+        .state('basic-operations-ipython',{
+            url:"/tutorial/basic-operations-ipython",
+            templateUrl:'/Project/tutorial/numpy/ipythonFiles/basic-operations-ipython.html'
+        })
+        //importing-data
+        .state('importing-data-ipython',{
+            url:"/tutorial/importing-data-ipython",
+            templateUrl:'/Project/tutorial/numpy/ipythonFiles/importing-data-ipython.html'
+        })
+        //Data Manipulation
+        .state('data-manipulation',{
+            url:"/tutorial/data-manipulation",
+            templateUrl:'/Project/tutorial/numpy/data-manipulation.html'
+        })
+        .state('data-manipulation-ipython',{
+            url:"/tutorial/data-manipulation-ipython",
+            templateUrl:'/Project/tutorial/numpy/ipythonFiles/data-manipulation-ipython.html'
+        })
         //end
 
     //end of basics-of-python
