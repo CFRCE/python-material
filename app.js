@@ -143,6 +143,15 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:"/tutorial/importing-data-ipython",
             templateUrl:'/Project/tutorial/numpy/ipythonFiles/importing-data-ipython.html'
         })
+        //Data Manipulation
+        .state('data-manipulation',{
+            url:"/tutorial/data-manipulation",
+            templateUrl:'/Project/tutorial/numpy/data-manipulation.html'
+        })
+        .state('data-manipulation-ipython',{
+            url:"/tutorial/data-manipulation-ipython",
+            templateUrl:'/Project/tutorial/numpy/ipythonFiles/data-manipulation-ipython.html'
+        })
         //end
 
     //end of basics-of-python
