@@ -16,19 +16,16 @@
           </blockquote>
           <ul>
               <li>
-                  <b>Arranging Data within Numerical Ranges:</b>
                   <div class="well well-sm">
-                      <ul>
-                          <li>
                               <b>numpy.arrange()</b>
-                              <div class="well well-sm">
+                              <div class="well well-sm numpy-arrange">
                                   <p>
                                       Function returns a ndarray containing evenly seperated values within a given range.
                                    </p>
                                 <pre>
                                     numpy.arange(start, stop, step, dtype)
                                 </pre>
-                                <b>EXP:</b>
+                                <b>Arguments:</b>
                                 <ol>
                                     <li>
                                         start:
@@ -56,14 +53,71 @@
                                     </li>
                                 </ol>
                               </div>
-                          </li>
-                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <div class="well well-sm">
+                      <b>numpy.logspace()</b>
+                      <div class="well well-sm numpy-logspace">
+                                  <p>
+                                      This function returns an ndarray object that contains the numbers that are evenly spaced on a log scale.
+                                  </p>
+                                  <p>
+                                      Start and stop endpoints of the scale are indices of the base, usually 10
+                                  </p>
+                                  <pre>
+                                      numpy.logscale(start, stop, num, endpoint, base, dtype)
+                                  </pre>
+                                  <div class="well well-sm">
+                                      <b>Arguments:</b>
+                                    <ol>
+                                        <li>
+                                            <b>start</b>
+                                            <p>
+                                                The starting point of the sequence is basestart
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <b>stop</b>
+                                            <p>
+                                                The final value of sequence is base <sup>stop</sup>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <b>num</b>
+                                            <p>
+                                                The number of values between the range. Default is 50
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <b>endpoint</b>
+                                            <p>
+                                                If true, stop is the last value in the range
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <b>base</b>
+                                            <p>
+                                                Base of log space, default is 10
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <b>dtype</b>
+                                            <p>
+                                                Data type of output array if given else it'd depend on other input arguments
+                                            </p>
+                                        </li>
+                                    </ol>
+                                  </div>
+                              </div>
                   </div>
               </li>
           </ul>
       </div>
       <div class="panel-footer">
-
+          <a href="https://www.tutorialspoint.com/numpy/">
+              Tutorialspoint
+          </a>
       </div>
     </div>
 </div>

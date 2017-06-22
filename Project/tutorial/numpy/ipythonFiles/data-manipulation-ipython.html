@@ -11748,10 +11748,11 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;numpy.arange(start, stop, step, dtype)&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Arange()&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;numpy.arange(start, stop, step, dtype)&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> 
 </pre></div>
 
@@ -11765,7 +11766,8 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>numpy.arange(start, stop, step, dtype)
+<pre>Arange()
+numpy.arange(start, stop, step, dtype)
 </pre>
 </div>
 </div>
@@ -11862,7 +11864,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#setting step value t print all even numbers between 1 to 20</span>
@@ -11881,6 +11883,95 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[ 2  4  6  8 10 12 14 16 18 20]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;logspace()&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;numpy.logscale(start, stop, num, endpoint, base, dtype)&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>logspace()
+numpy.logscale(start, stop, num, endpoint, base, dtype)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># default base is 10 </span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> 
+<span class="k">print</span> <span class="n">a</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[  10.           12.91549665   16.68100537   21.5443469    27.82559402
+   35.93813664   46.41588834   59.94842503   77.42636827  100.        ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># set base of log space to 2 </span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">base</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> 
+<span class="k">print</span> <span class="n">a</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[    2.     4.     8.    16.    32.    64.   128.   256.   512.  1024.]
 </pre>
 </div>
 </div>
