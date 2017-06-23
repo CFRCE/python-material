@@ -152,6 +152,16 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:"/tutorial/data-manipulation-ipython",
             templateUrl:'/Project/tutorial/numpy/ipythonFiles/data-manipulation-ipython.html'
         })
+        //plot-a-graph plot a simple graph
+        .state('plot-a-graph',{
+            url:"/tutorial/plot-a-graph",
+            templateUrl:'/Project/tutorial/matplotlib/plot-a-graph.html'
+        })
+        .state('plot-a-graph-ipython',{
+            url:"/tutorial/plot-a-graph-ipython",
+            templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/plot-a-graph-ipython.html'
+        })
+
         //end
 
     //end of basics-of-python
