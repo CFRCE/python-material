@@ -161,7 +161,22 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:"/tutorial/plot-a-graph-ipython",
             templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/plot-a-graph-ipython.html'
         })
-
+        //plot different types of graph
+            //Sin Graph
+            .state('sin-graph-ipython',{
+                url:"/tutorial/sin-graph-ipython",
+                templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/sin-graph-ipython.html'
+            })
+            //multiple-graphs-ipython.html
+            .state('multiple-graphs-ipython',{
+                url:"/tutorial/multiple-graphs-ipython",
+                templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/multiple-graphs-ipython.html'
+            })
+            //subplot-graph-ipython
+            .state('subplot-graph-ipython',{
+                url:"/tutorial/subplot-graph-ipython",
+                templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/subplot-graph-ipython.html'
+            })
         //end
 
     //end of basics-of-python
