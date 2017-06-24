@@ -177,6 +177,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 url:"/tutorial/subplot-graph-ipython",
                 templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/subplot-graph-ipython.html'
             })
+            //multiple representation of point-graph-ipython
+            .state('multiple-rep-point-graph-ipython',{
+                url:"/tutorial/multiple-rep-point-graph-ipython",
+                templateUrl:'/Project/tutorial/matplotlib/ipythonFiles/multiple-rep-point-graph-ipython.html'
+            })
         //end
 
     //end of basics-of-python
