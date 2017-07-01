@@ -6,3 +6,6 @@ Topics ranging from basics of python and basic modules
 2. Install Express, Body-parser using npm install express body-parser
 3. Run server by typing node server.js
 4. Open browser at http://localhost:8080
+
+## hosted Live at 
+# https://belavadi.com/#/resources
