@@ -2,6 +2,13 @@
 
 ## Topics ranging from basics of python and basic modules
 
+## Prerequisites:
+- Gitbash
+- Nodejs
+- NPM
+- Anaconda
+- Jupyter
+
 ## Instructions:
 1. Download Package from respective branch
 2. Install packages by running
@@ -16,6 +23,5 @@
 
 #### There will be addtional content coming up
 
-## Feel free to go around the rough design available at the bottom of the tutorial page to get ahead !
+### Feel free to go around the rough design available at the bottom of the tutorial page to get ahead !
 
-# Work in progress.
